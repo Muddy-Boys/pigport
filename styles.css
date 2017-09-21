@@ -1,0 +1,10 @@
+body{
+	background: LightGray; 
+}
+.name{
+	font-color: black;
+	border: 3px, 3px, 3px, 3px;
+	border-width: 3px;
+	border-color: black;
+
+}
