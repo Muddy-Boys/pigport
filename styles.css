@@ -1,6 +1,13 @@
 body{
 	background: #FFADAD;
 }
+.video{
+	display: inline;
+}
+.logo{
+	max-height: 100px;
+	max-width: 100px;
+}
 .title{
 	opacity: 0.15;
 	font-family: raleway;
@@ -9,5 +16,4 @@ body{
 }
 .title:hover{
 	opacity:0.5;
-	
 }
