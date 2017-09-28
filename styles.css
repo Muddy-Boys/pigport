@@ -1,10 +1,13 @@
 body{
-	background: LightGray; 
+	background: #FFADAD;
 }
-.name{
-	font-color: black;
-	border: 3px, 3px, 3px, 3px;
-	border-width: 3px;
-	border-color: black;
-
+.title{
+	opacity: 0.15;
+	font-family: raleway;
+	text-align: center;
+	font-size: 50px;
+}
+.title:hover{
+	opacity:0.5;
+	
 }
