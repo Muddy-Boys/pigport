@@ -1,19 +1,24 @@
 body{
 	background: #FFADAD;
 }
-.video{
-	display: inline;
-}
-.logo{
-	max-height: 100px;
-	max-width: 100px;
+#logo{
+	display: block;
+	margin: 0 auto;
+	height: 30%;
+	width: 30%;;
 }
 .title{
-	opacity: 0.15;
+	position: fixed;
+	width: 100%;
+	display: inline-block;
+	opacity: 0.1;
 	font-family: raleway;
-	text-align: center;
 	font-size: 50px;
 }
 .title:hover{
 	opacity:0.5;
+}
+#titleText{
+	margin: auto;
+	text-align: center;
 }
