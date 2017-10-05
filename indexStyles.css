@@ -1,0 +1,43 @@
+body{
+	/* background: #; */
+	/* background: rgba(255, 173, 173, 0.2); */
+	/* background-image: url('imgs/giphy.gif'); */
+	/* background-blend-mode: multiply; */
+	background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("imgs/giphy.gif");
+	
+	background-size: cover;	
+}
+#logo{
+	display: block;
+	margin: 0 auto;
+	height: 15%;
+	width: 15%;
+	padding: 0px;
+}
+.title{
+	position: fixed;
+	width: 100%;
+	display: inline-block;
+	opacity: 0.1;
+	font-family: raleway;
+	font-size: 50px;
+}
+.title:hover{
+	opacity:0.80;
+}
+#titleText{
+	margin: auto;
+	text-align: center;
+}
+.ptitleText{
+	font-size: 50%;
+	font-weight: bold;
+}
+.button{
+	border: none;
+	background-color: #F8FFFD;
+	padding: 20px 30px 20px 30px;
+	font-size: 30px;
+	display: block;
+	margin: 0 auto;
+}
