@@ -22,11 +22,11 @@ body{
 	font-family: raleway;
 	font-size: 50px;
 }
-.title:hover{
+/* .title:hover{
 	opacity:0.80;
-}
+} */
 #titleText{
-	margin: auto;
+	padding: 0px;
 	text-align: center;
 }
 .ptitleText{
