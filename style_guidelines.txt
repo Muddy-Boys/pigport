@@ -1,4 +1,4 @@
-Overall Look and Feel of Roomie
+Overall Look and Feel of PigPort
 ===============================
 
 we are building a minimalist website that is visually appealing and can clearly depict our message in a few short scrolls
