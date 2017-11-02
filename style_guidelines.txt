@@ -1,0 +1,37 @@
+Overall Look and Feel of PigPort
+===============================
+
+we are building a minimalist website that is visually appealing and can clearly depict our message in a few short scrolls
+The website should be clean and responsive and should require low effort to attain an 
+
+Colours
+========
+For PigPort we decided to use colors that pertain to our theme while also being complimentry. 
+We aimed for a color scheme that was light and didnt draw too much attention.
+you can view our color scheme with the image ./mockups/Color_Scheme.png
+These are our color swatches:
+
+- #FE5F55
+- #FFADAD
+- #ACBEA3
+- #444545
+- #F8FFFD
+
+Iconography
+===========
+we will use clean and non shaded 'flat' icons.
+These icons will be PNG as to make certain edges blend in with the background color
+
+Typography
+==========
+We will be using Raleway from Google Fonts.
+
+Links
+=====
+Links will not be underlined and should change color when a user hovers over it. 
+Very important links will have a higher opacity when hovering over them
+
+Buttons
+=======
+Buttons will be flat designed using the chosen colors outlined above.
+Very important buttons will have a higher opacity when hovering over them
