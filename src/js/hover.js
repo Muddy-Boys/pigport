@@ -21,7 +21,7 @@ $(document).mousemove(function(event) {
     // currentMousePos.x
     // console.log(dPoint/max)
     // console.log(currentMousePos.x + ' ' + point.x + ' ' + currentMousePos.y + ' ' + point.y)
-    console.log(dPoint + ' ' + max)
+    // console.log(dPoint + ' ' + max)
     $(".title").css("opacity", 1-(dPoint/max));
 });
 

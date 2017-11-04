@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+    <link href="src/css/parallax.css" type="text/css" rel="stylesheet">   
+    <link href="src/css/main.css" type="text/css" rel="stylesheet">    
+    
 </head>
 <body>
+    
+<div class="header">
+    <img class="header-img" src="src/imgs/logos/logo64x64.png"/>  
+    <p class="header-text"> Pig Port </p>    
+</div>
+<div class="navbar">
+    <div class="container navbar-text">
+        <div><a href="">Home</a></div><div><a>The Team</a></div><div><a>Business Plan</a></div><div><a>FAQs</a></div>
+    </div>
+</div>
+<div class="img1"></div>
 
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:red;font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
+<div class="lax-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 </div>
 
-<div class="parallax"></div>
+<div class="img2"></div>
 
+<style>
+.lax-body{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color:#90323D
+}
+.img1{
+    height: 50%; 
+    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/parallax/1.jpg") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img2{
+    height: 50%; 
+    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/parallax/2.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
 </body>
 </html>

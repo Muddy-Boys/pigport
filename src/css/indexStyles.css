@@ -1,14 +1,4 @@
-body{
-	/* background: #; */
-	/* background: rgba(255, 173, 173, 0.2); */
-	/* background-image: url('imgs/giphy.gif'); */
-	/* background-blend-mode: multiply; */
-	background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/giphy.gif") no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;	
-}
+
 #logo{
 	display: block;
 	margin: 0 auto;
