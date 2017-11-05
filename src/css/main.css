@@ -29,11 +29,40 @@ body{
     padding-top: 80px
 }
 .navbar-text{
+    
     margin-top: 5px;
     color: white;
 
 }
-
+.button{
+    position: relative;
+    background-color: #75dbcd;
+    border: none;
+    color: #F8FFFD;
+    padding: 3px 10px 3px 10px;
+    transition-duration:0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button:after{
+    content:"";
+    background: #ADE6DD;
+    display:block;
+    position:absolute;
+    opacity:0;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    transition: all 0.8s
+}
+.button:active:after{
+    padding:0;
+    margin:0;
+    opacity:1;
+    transition:0s
+}
 .container > div {
     display: inline-block;
     display: -moz-inline-box;
