@@ -4,7 +4,7 @@ body{
 .header{
     position: fixed;
     height: 80px;
-    background-color: #90323D;
+    background-color: #581F27;
     width: 100%;
     z-index: 1;
 }
@@ -25,20 +25,77 @@ body{
     position: fixed;
     width: 100%;
     height: 30px;
-    background-color: #581F27;
+    background-color: #361419;
     padding-top: 80px
 }
 .navbar-text{
     margin-top: 5px;
-    color: white;
+    color: #FFADAD;
 
 }
 
-.container > div {
+.row > .col-4 > div {
     display: inline-block;
     display: -moz-inline-box;
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
     width: 25%;
+    word-break: break-all;
+    
+}
+
+.social-imgs{
+    height: 64px;
+}
+
+.row > .col-3 > div{
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    word-break: break-all;
+    
+}
+.row > .col-2 > div{
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 49%;
+    word-break: break-all;
+    
+}
+
+.center{
     text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+
+h1{
+    color: #FFADAD;
+    font-size: 450%;   
+}
+
+h2{
+    color: #FFADAD;
+    font-size: 250%;   
+}
+p{
+    font-size: 150%;
+    color: #FFADAD;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.icon-img{
+    height: 128px;
+}
+.team-img{
+    height: 200px;
+    display: block;
 }
