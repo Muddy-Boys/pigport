@@ -7,25 +7,28 @@
     <link href="src/css/main.css" type="text/css" rel="stylesheet">    
     <link href="src/css/modal.css" type="text/css" rel="stylesheet">    
     
+    <script type="text/javascript" src="src/js/jquery.min.js"></script>    
+    <script type="text/javascript" src="src/js/jquery.transit.js"></script>
+    <!-- <script type="text/javascript" src="src/js/main.js"></script>     -->
+    <script type="text/javascript" src="src/js/modal.js"></script>
     
 </head>
 <body>
     
 <div class="header">
-    <img class="header-img" src="src/imgs/logos/logo64x64.png"/>  
+    <!-- <div style="height: 100px; width: 100px; background-color: grey" class="box" id="box"></div> -->
+    <img class="header-img" src="src/imgs/logos/logo64x64.png" id="pig-logo" class="pig-logo"/>  
     <p class="header-text"> Pig Port </p>    
 </div>
 <div class="navbar">
     <div class="container navbar-text center">
-        <div><a href='#home'><button class='button'>Home</button></a></div>
-        <div><a href='#team'><button class='button'>The Team</button></a></div>
-        <div><a href='#plan'></a><button class='button'>Business Plan</button></a></div>
+        <div><a href='#welcome'><button class='button'>Home</button></a></div>
+        <div><a href='#the-team'><button class='button'>The Team</button></a></div>
+        <div><a href='#business-plan'><button class='button'>Business Plan</button></a></div>
         <div><a href='#FAQ'><button class='button'>FAQs</button></a></div>
     </div>
 </div>
 <div class="img1"></div>
-
-
 
 
 <div class="lax-body" id="welcome">
@@ -38,41 +41,59 @@
 
 <div class="img1"></div>
 
-<div class="lax-body" id="welcome">
+<div class="lax-body" id="FAQ">
 
     <h2 class="center"> FAQs </h2> 
-    <div class="row">
-        <div class="col-3">
-            <div>
 
-            </div>
-            <div>
 
-            </div>
-            <div>
 
+
+            <div>
+                <button class="accordion">Physical Requirements </button>
+                <div class="panel">
+                    <p class="accordion-text">
+                        - Minimum 250lb deadlift
+                        <br>
+                        - Minimum 125lb bench press
+                        <br>            
+                        - Minimum 300lb squat
+                        <br>            
+                        - Sub 25 minute 5km run time is encouraged                
+                    </p>
+                </div>
             </div>
-        </div>
-    </div>
+            <br>
+            <button class="accordion">Physical Requirements </button>
+            <div class="panel">
+                <p class="accordion-text">
+                    - Minimum 250lb deadlift
+                    <br>
+                    - Minimum 125lb bench press
+                    <br>            
+                    - Minimum 300lb squat
+                    <br>            
+                    - Sub 25 minute 5km run time is encouraged                
+                </p>
+            </div>
 </div>
 
 
 <div class="img2"></div>
 
-<div class="lax-body" id="business-plan">
+<div class="lax-body" id='business-plan'>
         
     <h2 class="center"> Business Plan </h2> 
     <div class="row">
         <div class="col-3 center">
             <div>
-                <img class="icon-img" src="src/imgs/icons/internet.png">
+                <img class="icon-img" src="src/imgs/icons/internet.png" id="bus-1">
             </div>
             <div>
-                <img class="icon-img" src="src/imgs/icons/settings.png">
+                <img class="icon-img" src="src/imgs/icons/settings.png" id="bus-2">
                     
             </div>
             <div>
-                <img class="icon-img" src="src/imgs/icons/clock-1.png">
+                <img class="icon-img" src="src/imgs/icons/clock-1.png" id="bus-3">
                     
             </div>
         </div>
@@ -103,7 +124,6 @@
 </div>
 
 <div class="img2"></div>
-
 
 <div class="lax-body" id="the-team">
         
@@ -152,7 +172,7 @@
                 <span class="modal-close">&times;</span>                    
             </div>
             <div class="modal-body">
-                <img class="modal-img" src="src/imgs/team/marc.png"/>                    
+                <img class="modal-img" src="src/imgs/team/marc.png" id="marc-img"/>                    
                 <p class="title">Marc Frame</p>
                 <p class="subtitle"> President and CEO </p>
                 <p class="body-text"> is the founder of Pigport and an established software developer from Toronto, Ontario. He is an proficient front end and back end developer with a passion for data processing. When you can’t find Marc programming he is likely spending his time enjoying the outdoors since he is an devoted rock climber and hiker. Marc is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.</p>
@@ -167,7 +187,7 @@
                 <span class="modal-close">&times;</span>                    
             </div>
             <div class="modal-body">
-                <img class="modal-img" src="src/imgs/logos/facebook250x250.png"/>                    
+                <img class="modal-img" src="src/imgs/logos/facebook250x250.png" id="ian-img"/>                    
                 <p class="title">Ian Desson</p>
                 <p class="subtitle"> Lead Software Developer </p>
                 <p class="body-text">
@@ -184,7 +204,7 @@
                 <span class="modal-close">&times;</span>                    
             </div>
             <div class="modal-body">
-                <img class="modal-img" src="src/imgs/logos/facebook250x250.png"/>                    
+                <img class="modal-img" src="src/imgs/logos/facebook250x250.png" id="marc-img"/>                    
                 <p class="title">Ian Desson</p>
                 <p class="subtitle"> Executive Product Developer </p>
                 <p class="body-text">
@@ -279,6 +299,60 @@
 </style>
 
 </body>
+<script>
+$(function() {
+
+    var acc = document.getElementsByClassName("accordion");
+
+    for (var i = 0; i < acc.length; i++) {
+        acc[i].onclick = function(){
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    }
+
+    $("#pig-logo").hover(
+        function(){
+            $('#pig-logo').transition({ rotate: '15deg' });
+        },
+        function(){
+            $('#pig-logo').transition({ rotate: '0deg' });
+        }
+    );
+    $(".modal-btn").hover(
+        function(){
+            $('.modal-btn').transition({ scale: '1.05' });
+        },
+        function(){
+            $('.modal-btn').transition({ scale: '1' });
+        }
+    );
+    $(".modal-img").hover(
+        function(){
+            $('.modal-img').transition({ scale: '1.05' });
+            
+        },
+        function(){
+            $('.modal-img').transition({ scale: '1' });
+        }
+    );
+
+    $(".icon-img").hover(
+        function(){
+            $('.icon-img').transition({ scale: '1.05' });
+            
+        },
+        function(){
+            $('.icon-img').transition({ scale: '1' });
+        }
+    );
+});
+</script>
 <script type="text/javascript" src="src/js/modal.js"></script>
 
 </html>

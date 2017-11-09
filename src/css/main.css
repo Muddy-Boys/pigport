@@ -1,4 +1,8 @@
+html{
+    overflow: hidden;    
+}
 body{
+    overflow-y: scroll;    
     font-family: raleway;    
 }
 .header{
@@ -6,7 +10,7 @@ body{
     height: 80px;
     background-color: #581F27;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
 }
 .header-img{
     padding-top: 8px;
@@ -26,7 +30,8 @@ body{
     width: 100%;
     height: 30px;
     background-color: #361419;
-    padding-top: 80px
+    padding-top: 80px;
+    z-index: 99;
 }
 .navbar-text{
     margin-top: 5px;
@@ -143,4 +148,34 @@ p{
 .subtitle{
     padding-top: 0px;
     font-size: 110%;
+}
+
+
+button.accordion {
+    background-color: #BE4353;
+    color: #FFADAD;
+    padding-top: 18px;
+    padding-bottom: 18px;   
+    padding-right: 0px; 
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 130%;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #FFADAD;    
+    color: #BE4353; 
+}
+
+div.panel {
+    display: none;
+    padding: 0px;
+}
+p.accordion-text{
+    font-size: 120%;
+    padding: 0px;
 }
