@@ -16,7 +16,7 @@
     <p class="header-text"> Pig Port </p>    
 </div>
 <div class="navbar">
-    <div class="container navbar-text">
+    <div class="container navbar-text center">
         <div><a href='#home'><button class='button'>Home</button></a></div>
         <div><a href='#team'><button class='button'>The Team</button></a></div>
         <div><a href='#plan'></a><button class='button'>Business Plan</button></a></div>
@@ -41,7 +41,19 @@
 <div class="lax-body" id="welcome">
 
     <h2 class="center"> FAQs </h2> 
-    
+    <div class="row">
+        <div class="col-3">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -99,17 +111,17 @@
     <div class="row">
         <div class="col-3 center">
             <div>
-                <button class="modal-btn" id="marc_btn">
+                <button class="modal-btn" id="marc_modal_btn">
                 <img class="team-img" src="src/imgs/team/marc.png"/>
                 </button>
             </div>
             <div>
-                <button class="modal-btn" id="ian">
+                <button class="modal-btn" id="ian_modal_btn">
                     <img class="team-img" src="src/imgs/icons/settings.png"/>
                 </button>
             </div>
             <div>
-                <button class="modal-btn" id="filip">
+                <button class="modal-btn" id="filip_modal_btn">
                         <img class="team-img" src="src/imgs/icons/clock-1.png"/>                        
                 </button>
             </div>
@@ -117,20 +129,18 @@
     </div>
     <br>
     <div class="row">
-        <div class="col-4">
+        <div class="col-2">
 
-            <div></div>
-            <div class="left">
-                <button class="modal-btn" id="christian">
+            <div class="center">
+                <button class="modal-btn" id="christian_modal_btn">
                     <img class="team-img" src="src/imgs/icons/internet.png"/>
                 </button>
             </div>
-            <div class="right">
-                <button class="modal-btn" id="kenneth">
+            <div class="center">
+                <button class="modal-btn" id="kenneth_modal_btn">
                     <img class="team-img" src="src/imgs/icons/settings.png"/>  
                 </button>  
             </div>
-            <div></div>
         </div>
     </div>
 
@@ -139,12 +149,81 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">&times;</span>                    
+                <span class="modal-close">&times;</span>                    
             </div>
             <div class="modal-body">
                 <img class="modal-img" src="src/imgs/team/marc.png"/>                    
-                <p>Marc Frame</p>
-                <p> President and CEO </p>
+                <p class="title">Marc Frame</p>
+                <p class="subtitle"> President and CEO </p>
+                <p class="body-text"> is the founder of Pigport and an established software developer from Toronto, Ontario. He is an proficient front end and back end developer with a passion for data processing. When you can’t find Marc programming he is likely spending his time enjoying the outdoors since he is an devoted rock climber and hiker. Marc is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="ian_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>                    
+            </div>
+            <div class="modal-body">
+                <img class="modal-img" src="src/imgs/logos/facebook250x250.png"/>                    
+                <p class="title">Ian Desson</p>
+                <p class="subtitle"> Lead Software Developer </p>
+                <p class="body-text">
+                    is a master of many programming languages. He is from Ottawa, Ontario. He wrote his first computer program at the young age of 10 and hasn’t looked back since. He likes to spend his free time playing soccer with the his friends. Ian is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="filip_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>                    
+            </div>
+            <div class="modal-body">
+                <img class="modal-img" src="src/imgs/logos/facebook250x250.png"/>                    
+                <p class="title">Ian Desson</p>
+                <p class="subtitle"> Executive Product Developer </p>
+                <p class="body-text">
+                    uses his coding knowledge to make Pigport an effective service. He is originally from Ottawa, Ontario. Filip plays sports like soccer and basketball in his spare time. He is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="christian_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>                    
+            </div>
+            <div class="modal-body">
+                <img class="modal-img" src="src/imgs/logos/facebook250x250.png"/>                    
+                <p class="title">Christian MacLean</p>
+                <p class="subtitle"> User Experience Developer </p>
+                <p class="body-text">
+                    is is in charge of brand promotion. He is originally from Ottawa, Ontario. Christian enjoys spending his free time cycling through the Ottawa-Gatineau region and playing golf. He is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="kenneth_modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-close">&times;</span>                    
+            </div>
+            <div class="modal-body">
+                <img class="modal-img" src="src/imgs/logos/facebook250x250.png"/>                    
+                <p class="title">Kenneth Yui-Man Axalan Ng</p>
+                <p class="subtitle"> Senior Project Manager </p>
+                <p class="body-text">
+                    is an experienced programmer and natural leader he knows how to keep the boys on track! He is originally from Rochester, New York but now resides in Ottawa, Ontario. Kenneth is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.
+                    
+                </p>
             </div>
 
         </div>

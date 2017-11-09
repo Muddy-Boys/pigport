@@ -24,11 +24,11 @@
     /* border: 1px solid #888;     */
 }
 .modal-body > p{
-    font-size: 150%;
+    /* font-size: 1%; */
     color: black;
 }
 /* The Close Button */
-.close {
+.modal-close {
     color: #FFADAD;
     float: right;
     font-size: 28px;
@@ -36,8 +36,8 @@
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.modal-close:hover,
+.modal-close:focus {
     color: #581F27;
     text-decoration: none;
     cursor: pointer;

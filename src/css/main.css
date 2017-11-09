@@ -71,7 +71,7 @@ body{
     display: -moz-inline-box;
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
-    width: 25%;
+    width: 24%;
     word-break: break-all;
     
 }
@@ -130,11 +130,17 @@ p{
 .team-img{
     height: 200px;
     display: block;
-=======
-    width: 23%;
+    /* width: 23%; */
     text-align: center;
 }
 .team-page{
     background-color: #90323D
->>>>>>> 21c88033bc132bd307c9f005fc56377bbb4743d2
+}
+
+.body-text{
+    font-size: 100%;
+}
+.subtitle{
+    padding-top: 0px;
+    font-size: 110%;
 }
