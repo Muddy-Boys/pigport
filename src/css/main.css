@@ -1,0 +1,140 @@
+body{
+    font-family: raleway;    
+}
+.header{
+    position: fixed;
+    height: 80px;
+    background-color: #581F27;
+    width: 100%;
+    z-index: 1;
+}
+.header-img{
+    padding-top: 8px;
+    padding-left: 8px;
+    float: left;
+}
+.header-text{
+    display: inline-block;
+    font-family: raleway;        
+    font-size: 300%;
+    color: #FFADAD;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: #361419;
+    padding-top: 80px
+}
+.navbar-text{
+    margin-top: 5px;
+    color: #FFADAD;
+
+}
+
+.row > .col-4 > div {
+    color: white;
+}
+.button{
+    position: relative;
+    background-color: #75dbcd;
+    border: none;
+    color: #F8FFFD;
+    padding: 3px 10px 3px 10px;
+    transition-duration:0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+.button:after{
+    content:"";
+    background: #ADE6DD;
+    display:block;
+    position:absolute;
+    opacity:0;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    transition: all 0.8s
+}
+.button:active:after{
+    padding:0;
+    margin:0;
+    opacity:1;
+    transition:0s
+}
+.container > div {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 24%;
+    word-break: break-all;
+    
+}
+
+.social-imgs{
+    height: 64px;
+}
+
+.row > .col-3 > div{
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    word-break: break-all;
+    
+}
+.row > .col-2 > div{
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 49%;
+    word-break: break-all;
+    
+}
+
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+
+h1{
+    color: #FFADAD;
+    font-size: 450%;   
+}
+
+h2{
+    color: #FFADAD;
+    font-size: 250%;   
+}
+p{
+    font-size: 150%;
+    color: #FFADAD;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.icon-img{
+    height: 128px;
+}
+.team-img{
+    height: 200px;
+    display: block;
+=======
+    width: 23%;
+    text-align: center;
+}
+.team-page{
+    background-color: #90323D
+>>>>>>> 21c88033bc132bd307c9f005fc56377bbb4743d2
+}
