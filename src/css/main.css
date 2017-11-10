@@ -1,8 +1,6 @@
-html{
-    overflow: hidden;    
-}
 body{
-    overflow-y: scroll;    
+    
+    overflow:hidden;
     font-family: raleway;    
 }
 .header{
@@ -24,14 +22,14 @@ body{
     color: #FFADAD;
     margin-top: 8px;
     margin-left: 8px;
+    text-decoration: inherit;
 }
 .navbar{
     position: fixed;
     width: 100%;
     height: 30px;
     background-color: #361419;
-    padding-top: 80px;
-    z-index: 99;
+    padding-top: 80px
 }
 .navbar-text{
     margin-top: 5px;
@@ -44,7 +42,7 @@ body{
 }
 .button{
     position: relative;
-    background-color: #75dbcd;
+    background-color: #361419;
     border: none;
     color: #F8FFFD;
     padding: 3px 10px 3px 10px;
@@ -135,47 +133,11 @@ p{
 .team-img{
     height: 200px;
     display: block;
-    /* width: 23%; */
+======
+    width: 23%;
     text-align: center;
 }
 .team-page{
     background-color: #90323D
-}
-
-.body-text{
-    font-size: 100%;
-}
-.subtitle{
-    padding-top: 0px;
-    font-size: 110%;
-}
-
-
-button.accordion {
-    background-color: #BE4353;
-    color: #FFADAD;
-    padding-top: 18px;
-    padding-bottom: 18px;   
-    padding-right: 0px; 
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 130%;
-    transition: 0.4s;
-}
-
-button.accordion.active, button.accordion:hover {
-    background-color: #FFADAD;    
-    color: #BE4353; 
-}
-
-div.panel {
-    display: none;
-    padding: 0px;
-}
-p.accordion-text{
-    font-size: 120%;
-    padding: 0px;
+>>>>>>> 21c88033bc132bd307c9f005fc56377bbb4743d2
 }
