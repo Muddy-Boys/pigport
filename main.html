@@ -22,13 +22,14 @@
 </div>
 <div class="navbar">
     <div class="container navbar-text center">
-        <div><a href='#welcome'><button class='button'>Home</button></a></div>
-        <div><a href='#the-team'><button class='button'>The Team</button></a></div>
-        <div><a href='#business-plan'><button class='button'>Business Plan</button></a></div>
-        <div><a href='#FAQ'><button class='button'>FAQs</button></a></div>
+        <div><button class='button' id="home-btn">Home</button></div>
+        <div><button class="button" id="faq-btn">FAQs</button></div>        
+        <div><button class='button' id="business-btn">Business Plan</button></div>
+        <div><button class='button' id="the-team-btn">The Team</button></div>
+        
     </div>
 </div>
-<div class="img1"></div>
+<div class="img1" id="home"></div>
 
 
 <div class="lax-body" id="welcome">
@@ -41,7 +42,7 @@
 
 <div class="img1"></div>
 
-<div class="lax-body" id="FAQ">
+<div class="lax-body" id="faq" class="faq">
 
     <h2 class="center"> FAQs </h2> 
 
@@ -80,7 +81,7 @@
 
 <div class="img2"></div>
 
-<div class="lax-body" id='business-plan'>
+<div class="lax-body" id='business'>
         
     <h2 class="center"> Business Plan </h2> 
     <div class="row">
@@ -351,6 +352,27 @@ $(function() {
             $('.icon-img').transition({ scale: '1' });
         }
     );
+    
+});
+
+$("#faq-btn").click(function() {
+    console.log("BUTTON")
+    console.log($("#faq").offset().top)
+    
+    $("html, body").animate({scrollTop: $("#faq").offset().top-100}, 2000);
+    
+});
+$("#the-team-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#the-team").offset().top-100}, 2000);
+    
+});
+$("#business-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#business").offset().top-100}, 2000);
+    
+});
+$("#home-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#home").offset().top-100}, 2000);
+    
 });
 </script>
 <script type="text/javascript" src="src/js/modal.js"></script>

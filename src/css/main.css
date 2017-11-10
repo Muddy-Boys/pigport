@@ -1,5 +1,8 @@
-html{
+/* html{
     overflow: hidden;    
+} */
+body {
+    overflow-x: hidden;        
 }
 body{
     overflow-y: scroll;    
@@ -44,9 +47,9 @@ body{
 }
 .button{
     position: relative;
-    background-color: #75dbcd;
+    background-color: #361419;
     border: none;
-    color: #F8FFFD;
+    color: #FFADAD;
     padding: 3px 10px 3px 10px;
     transition-duration:0.4s;
     text-decoration: none;
@@ -71,6 +74,7 @@ body{
     opacity:1;
     transition:0s
 }
+.button:focus {outline:0;}
 .container > div {
     display: inline-block;
     display: -moz-inline-box;
