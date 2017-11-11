@@ -81,7 +81,7 @@ body{
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
     width: 24%;
-    word-break: break-all;
+    word-break: normal;
     
 }
 
@@ -136,7 +136,7 @@ h2{
     margin-right: 5%;
 }
 li{
-    font-size: 150%;
+    font-size: 120%;
     color: #FFADAD;
     margin-left: 5%;
     margin-right: 5%;
@@ -231,4 +231,18 @@ a:active {
 	height: 100%;
 	z-index: 9999;
 	background: url("../imgs/loading.gif") center no-repeat #fff;
+}
+
+.map-container {
+	/* width: 100%; */
+	margin: 50px 0px 0px;
+}
+.map-container iframe{
+    /* width: 100%; */
+	display: inline-block;
+	pointer-events: none;
+	position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+	pointer-events: auto;
 }

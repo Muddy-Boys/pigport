@@ -4,8 +4,9 @@
 		<link href='src/css/indexStyles.css' type='text/css' rel='stylesheet'>
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-		<script type="text/javascript" src="src/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="src/js/jquery.min.js"></script>    
 		<script type="text/javascript" src="src/js/hover.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="src/imgs/logos/logo32x32.ico" />
 		
 		<title>Pig Port</title>
 	</head>
@@ -22,6 +23,8 @@
 			</form>
 		</div>
 	</body>
+	<div class="se-pre-con"></div>	
+
 	<style>
 	body{
 		/* background: #; */
@@ -38,5 +41,25 @@
 		background-size: cover;	
 		
 	}
+
+	/* LOADING PAGE STUFF */
+	.no-js #loader { display: none;  }
+	.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+	.se-pre-con {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url("../imgs/loading.gif") center no-repeat #fff;
+	}
+
 	</style>
+	<script>
+			$(window).load(function() {
+				// Animate loader off screen
+				$(".se-pre-con").fadeOut("slow");;
+			});
+		</script>
 </html>

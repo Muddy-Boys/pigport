@@ -16,21 +16,26 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
 
 
-    <title>Welcome!</title>
+    <title>PigPort</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="src/imgs/logos/logo32x32.ico" />
+    
 </head>
 <body>
     
 <div class="header">
-    <!-- <div style="height: 100px; width: 100px; background-color: grey" class="box" id="box"></div> -->
-    <img class="header-img" src="src/imgs/logos/logo64x64.png" id="pig-logo" class="pig-logo"/>  
-    <p class="header-text"> Pig Port </p>    
+    <a href="#" id="home-btn">
+        <img class="header-img" src="src/imgs/logos/logo64x64.png" id="pig-logo" class="pig-logo"/>  
+        <p class="header-text"> Pig Port </p>    
+    </a>
 </div>
 <div class="navbar">
     <div class="container navbar-text center">
-        <div><button class='button' id="home-btn">Home</button></div>
         <div><button class="button" id="faq-btn">FAQs</button></div>        
         <div><button class='button' id="business-btn">Business Plan</button></div>
         <div><button class='button' id="the-team-btn">The Team</button></div>
+        <div><button class='button' id="map-btn">Map</button></div>
+        
         
     </div>
 </div>
@@ -278,25 +283,31 @@
         
 </div>
 
-<div class="img2"></div>
+<div class="img3"></div>
 
 <div class="lax-body">
     <div class="center">
         <h2>More About PigPort</h2>
         <iframe id="slide_show" src="https://docs.google.com/presentation/d/e/2PACX-1vTf28rlMIPv3UozrVK2c62Z0eTSGG7mclhBpIEzMpHzvU_nZAdhrTfEwkjPTvDM6AZvxqoBSvER4Mlx/embed?start=false&loop=true&delayms=3000" frameborder="0" width="748" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>        
     </div>
+    <br>
+    <br>
 </div>
 
-<div class="img2"></div>
+<div class="img3"></div>
 
-<div class="lax-body">
+<div class="lax-body" id="the-map">
     <div class="center">
         <h2> Carriers in Your Location </h2>
-        <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1MhLXzSWp3_KSE5yeFqXELgolmgvbB0pi" width="748" height="450"></iframe>            
+        <div class="map-container">
+            <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1MhLXzSWp3_KSE5yeFqXELgolmgvbB0pi" width="748" height="450"></iframe>                            
+        </div>
     </div>
+    <br>
+    <br>
 </div>
 
-<div class="img2"></div>
+<div class="img1"></div>
 
 <div class="lax-body" id="footer">
 <h2 class="center"> Find us online</h2>
@@ -337,6 +348,14 @@
 .img2{
     height: 50%; 
     background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/giphy.gif") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img3{
+    height: 50%; 
+    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/parallax/1.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -440,12 +459,23 @@ $("#home-btn").click(function() {
     $("html, body").animate({scrollTop: $("#home").offset().top-100}, 2000);
     
 });
+$("#map-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#the-map").offset().top-100}, 2000);
+    
+});
 
 //waits for the page to load before displaying
 $(window).load(function() {
     // Animate loader off screen
     $(".se-pre-con").fadeOut("slow");;
 });
+
+$('.map-container')
+	.click(function(){
+			$(this).find('iframe').addClass('clicked')})
+	.mouseleave(function(){
+            $(this).find('iframe').removeClass('clicked')});
+            
 </script>
 <script type="text/javascript" src="src/js/modal.js"></script>
 
