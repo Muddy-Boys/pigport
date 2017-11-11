@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Join Us!</title>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link href="src/css/main.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="src/js/jquery.min.js"></script>    
+        <script type="text/javascript" src="src/js/jquery.transit.js"></script>
+        <!-- <script type="text/javascript" src="src/js/main.js"></script>     -->
+        <script type="text/javascript" src="src/js/modal.js"></script> 
+    </head>
+    <body>
+            <div class="header">
+                <!-- <div style="height: 100px; width: 100px; background-color: grey" class="box" id="box"></div> -->
+                <img class="header-img" src="src/imgs/logos/logo64x64.png" id="pig-logo" class="pig-logo"/>  
+                <a href="main.html" class="header-text"> Pig Port </a>    
+            </div>
+            <div class="boxSubmit">
+                <h2 id = "title">Sign up for Pig Port!</h2>
+                <div class="forms">
+                    <form>
+                        <label>First Name:</label> <br>
+                        <input type="text" name="firstName"><br>
+                        <label>Last Name:</label><br>
+                        <input type="text" name="lastName"><br>
+                        <label>Email:</label><br>
+                        <input type="text" name="email"><br>
+                        <br><button type="button" class="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+    </body>
+    <script type="text/javascript">
+$(function() {
+    $("#pig-logo").hover(
+        function(){
+            $('#pig-logo').transition({ rotate: '15deg' });
+        },
+        function(){
+            $('#pig-logo').transition({ rotate: '0deg' });
+        }
+    );
+    $('button').click(function(){
+        $('input[type="text"]').val('');
+    });
+});
+    </script>
+    <style>
+    body{
+        background-image: url("src/imgs/parallax/2.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    #title{
+        color:black;
+    }
+    .forms{
+        border: double;
+        width: 30%;
+        margin: auto;
+    }
+    input[type=text]{
+        border:none;
+        border-bottom: 2px solid #90323D;
+        background-color: #F8FFFD;
+        margin-top: 5px;
+    }
+    input[type=text]:focus{
+        border-bottom: #FE5F55;
+    }
+    input[type=label]{
+        font-family: raleway;
+    }
+    .boxSubmit{
+        background-color: #FFADAD;
+        margin: auto;
+        width: 50%;
+        border: solid;
+        padding-top:150px;
+        padding-bottom: 150px;
+        text-align: center;
+    }
+    </style>        
+</html>

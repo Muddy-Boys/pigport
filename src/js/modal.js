@@ -16,9 +16,9 @@ for(j in ids){
 
 // console.log('TEST')
 
-console.log(open_btns)
-console.log(close_btns)
-console.log(ids)
+// console.log(open_btns)
+// console.log(close_btns)
+// console.log(ids)
 
 for(let k = 0; k < ids.length; k++){
     open_btns[k].onclick = function() {
