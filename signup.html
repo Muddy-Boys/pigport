@@ -19,7 +19,7 @@
     
     </div>
     <div class="boxSubmit">
-        <h2 id = "title">Sign up for Pig Port!</h2>
+       <h2 id = "title">Sign up for Pig Port!</h2> 
         <div class="forms">
             <form>
                 <label>First Name:</label> <br>
@@ -27,7 +27,7 @@
                 <label>Last Name:</label><br>
                 <input type="text" name="lastName"><br>
                 <label>Email:</label><br>
-                <input type="text" name="email"><br>
+                <input type="text" name="email"><br><br>
                 <input type="checkbox" name="terms">
                 <label>I Agree to the <a href="#termsService">Terms of Service.</a></label>
                 <br><br><button type="button" class="button">Submit</button><br>
@@ -81,6 +81,7 @@ $(function() {
         function(){
             $('#pig-logo').transition({ rotate: '0deg' });
         }
+        
     );
     $('button').click(function(){
         $('input[type="text"]').val('');
@@ -95,7 +96,11 @@ $(function() {
         background-size: cover;
     }
     #title{
-        color:black;
+        padding: 10px 0 10px;
+        margin: 5px auto 30px;
+        color:#FFADAD;
+        background-color:#90323D;
+
     }
     .forms{
         border: double;
@@ -118,20 +123,21 @@ $(function() {
         background-color: #FFADAD;
         margin: auto;
         width: 50%;
-        border: solid;
+        border: solid #444545;
         padding-top:150px;
         text-align: center;
     }
-    p, li, h1, h2{
-        color: black;
+    p{
+      color:#FFADAD;  
     }
     .termsService{
         margin: 100px auto;
         height:500px;
         width:97%;
-        border:2px solid #444545;
+        border:3px solid #444545;
         font:16px/26px Georgia, Garamond, Serif;
         overflow:auto;
+        background-color:#90323D;
     }
     </style>        
 </html>
