@@ -81,7 +81,8 @@ body{
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
     width: 24%;
-    word-break: normal;
+    /* word-break: normal; */
+    overflow-wrap: normal;
     
 }
 
@@ -95,7 +96,7 @@ body{
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
     width: 33%;
-    word-break: break-all;
+    overflow-wrap: normal;
     
 }
 .row > .col-2 > div{
@@ -104,7 +105,7 @@ body{
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
     width: 49%;
-    word-break: break-all;
+    overflow-wrap: normal;
     
 }
 
