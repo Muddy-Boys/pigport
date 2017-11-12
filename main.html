@@ -11,24 +11,35 @@
     <script type="text/javascript" src="src/js/jquery.transit.js"></script>
     <!-- <script type="text/javascript" src="src/js/main.js"></script>     -->
     <script type="text/javascript" src="src/js/modal.js"></script>
-    <title>Welcome!</title>
+
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+
+
+    <title>PigPort</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="src/imgs/logos/logo32x32.ico" />
+    
 </head>
 <body>
     
 <div class="header">
-    <!-- <div style="height: 100px; width: 100px; background-color: grey" class="box" id="box"></div> -->
-    <img class="header-img" src="src/imgs/logos/logo64x64.png" id="pig-logo" class="pig-logo"/>  
-    <p class="header-text"> Pig Port </p>    
+    <a href="#" id="home-btn">
+        <img class="header-img" src="src/imgs/logos/logo64x64.png" id="pig-logo" class="pig-logo"/>  
+        <p class="header-text"> Pig Port </p>    
+    </a>
 </div>
 <div class="navbar">
     <div class="container navbar-text center">
-        <div><a href='#welcome'><button class='button'>Home</button></a></div>
-        <div><a href='#the-team'><button class='button'>The Team</button></a></div>
-        <div><a href='#business-plan'><button class='button'>Business Plan</button></a></div>
-        <div><a href='#FAQ'><button class='button'>FAQs</button></a></div>
+        <div><button class="button" id="faq-btn">FAQs</button></div>        
+        <div><button class='button' id="business-btn">Business Plan</button></div>
+        <div><button class='button' id="the-team-btn">The Team</button></div>
+        <div><button class='button' id="map-btn">Map</button></div>
+        
+        
     </div>
 </div>
-<div class="img1"></div>
+<div class="img1" id="home"></div>
 
 
 <div class="lax-body" id="welcome">
@@ -41,7 +52,7 @@
 
 <div class="img1"></div>
 
-<div class="lax-body" id="FAQ">
+<div class="lax-body" id="faq" class="faq">
 
     <h2 class="center"> FAQs </h2> 
 
@@ -54,7 +65,7 @@
                     <p class="accordion-text">To ensure the safety of our users we guarantee that all of our certified Pigport carriers are up to the task.
                         To ensure this, they must fill out the sign up form <a href='signup.html'>here</a>, 
                         as well as send us a police records check and a video recording showing the maximum amount of weight that they can carry comfortably as to determine which carrier division they would be placed in.
-                        </p>
+                    </p>
                 </div>
             </div>
             <br>
@@ -95,7 +106,7 @@
 
 <div class="img2"></div>
 
-<div class="lax-body" id='business-plan'>
+<div class="lax-body" id='business'>
         
     <h2 class="center"> Business Plan </h2> 
     <div class="row">
@@ -116,19 +127,25 @@
     <div class="row">
         <div class="col-3">
             <div>
-                <p>
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <p class="p">
+                Pigport works by offering a fun alternative to modern transportation “the piggyback”.
+                Users will be able to purchase and order piggybacks for either transportation or a to get a head above the crowd
+                Variable rates will be calculated based on travel time or distance
+                        
                 </p>
             </div>
             <div>
-                <p> 
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <p class="p"> 
+                Ordinarily prime pigport locations for maximum revenues would be high density tourist hotspots with lots of foot traffic ie: sparks street, times square, and similar locations
+                Pigport primarily targets venues to partner with like street parties, concerts, and other large outdoor events with a lot of foot traffic
                 </p>
             </div>
 
             <div>
-                <p>
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                <p class="p">
+                Pigport is always looking to perfect its product by responding to user feedback
+                Pigport is constantly looking to collaborate with other companies to establish its brand
+                Use viral marketing to promote our brand through social media like twitter, instagram, and snapchat     
                 </p>
             </div>
         </div>
@@ -147,7 +164,7 @@
         <div class="col-3 center">
             <div>
                 <button class="modal-btn" id="marc_modal_btn">
-                <img class="team-img" src="src/imgs/team/marc.png"/>
+                <img class="team-img" src="src/imgs/team/marc.JPG"/>
                 </button>
             </div>
             <div>
@@ -187,7 +204,7 @@
                 <span class="modal-close">&times;</span>                    
             </div>
             <div class="modal-body">
-                <img class="modal-img" src="src/imgs/team/marc.png" id="marc-img"/>                    
+                <img class="modal-img" src="src/imgs/team/marc.JPG" id="marc-img"/>                    
                 <p class="title">Marc Frame</p>
                 <p class="subtitle"> President and CEO </p>
                 <p class="body-text"> is the founder of Pigport and an established software developer from Toronto, Ontario. He is an proficient front end and back end developer with a passion for data processing. When you can’t find Marc programming he is likely spending his time enjoying the outdoors since he is an devoted rock climber and hiker. Marc is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.</p>
@@ -236,7 +253,7 @@
             </div>
             <div class="modal-body">
                 <img class="modal-img" src="src/imgs/logos/facebook250x250.png"/>                    
-                <p class="title">Christian MacLean</p>
+                <h1 class="title">Christian MacLean</p>
                 <p class="subtitle"> User Experience Developer </p>
                 <p class="body-text">
                     is is in charge of brand promotion. He is originally from Ottawa, Ontario. Christian enjoys spending his free time cycling through the Ottawa-Gatineau region and playing golf. He is currently pursuing a Software Engineering degree at the University of Ottawa while also managing his multiple programming related side projects.
@@ -266,7 +283,31 @@
         
 </div>
 
-<div class="img2"></div>
+<div class="img3"></div>
+
+<div class="lax-body">
+    <div class="center">
+        <h2>More About PigPort</h2>
+        <iframe id="slide_show" src="https://docs.google.com/presentation/d/e/2PACX-1vTf28rlMIPv3UozrVK2c62Z0eTSGG7mclhBpIEzMpHzvU_nZAdhrTfEwkjPTvDM6AZvxqoBSvER4Mlx/embed?start=false&loop=true&delayms=3000" frameborder="0" width="748" height="450" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>        
+    </div>
+    <br>
+    <br>
+</div>
+
+<div class="img3"></div>
+
+<div class="lax-body" id="the-map">
+    <div class="center">
+        <h2> Carriers in Your Location </h2>
+        <div class="map-container">
+            <iframe id="map" src="https://www.google.com/maps/d/u/0/embed?mid=1MhLXzSWp3_KSE5yeFqXELgolmgvbB0pi" width="748" height="450"></iframe>                            
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
+
+<div class="img1"></div>
 
 <div class="lax-body" id="footer">
 <h2 class="center"> Find us online</h2>
@@ -296,8 +337,9 @@
     background-color:#90323D
 }
 .img1{
+    padding-top: 128px;
     height: 50%; 
-    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/pigPin.png") no-repeat;
+    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/mapBackGround.png") no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -305,7 +347,15 @@
 }
 .img2{
     height: 50%; 
-    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/mapBackGround.png") no-repeat;
+    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/giphy.gif") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img3{
+    height: 50%; 
+    background:linear-gradient(0deg,rgba(255,173,173,0.6),rgba(255,173,173,0.6)),url("src/imgs/parallax/1.jpg") no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -314,6 +364,9 @@
 </style>
 
 </body>
+
+<div class="se-pre-con"></div>
+
 <script>
 $(function() {
 
@@ -366,7 +419,63 @@ $(function() {
             $('.icon-img').transition({ scale: '1' });
         }
     );
+    $("#slide_show").hover(
+        function(){
+            $('#slide_show').transition({ scale: '1.05' });
+            
+        },
+        function(){
+            $('#slide_show').transition({ scale: '1' });
+        }
+    );
+    $("#map").hover(
+        function(){
+            $('#map').transition({ scale: '1.05' });
+            
+        },
+        function(){
+            $('#map').transition({ scale: '1' });
+        }
+    );
+    
 });
+
+$("#faq-btn").click(function() {
+    console.log("BUTTON")
+    console.log($("#faq").offset().top)
+    
+    $("html, body").animate({scrollTop: $("#faq").offset().top-100}, 2000);
+    
+});
+$("#the-team-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#the-team").offset().top-100}, 2000);
+    
+});
+$("#business-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#business").offset().top-100}, 2000);
+    
+});
+$("#home-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#home").offset().top-100}, 2000);
+    
+});
+$("#map-btn").click(function() {    
+    $("html, body").animate({scrollTop: $("#the-map").offset().top-100}, 2000);
+    
+});
+
+//waits for the page to load before displaying
+$(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+});
+
+$('.map-container')
+	.click(function(){
+			$(this).find('iframe').addClass('clicked')})
+	.mouseleave(function(){
+            $(this).find('iframe').removeClass('clicked')});
+            
 </script>
 <script type="text/javascript" src="src/js/modal.js"></script>
 

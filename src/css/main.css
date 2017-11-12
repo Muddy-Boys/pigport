@@ -1,6 +1,11 @@
+/* html{
+    overflow: hidden;    
+} */
+body {
+    overflow-x: hidden;        
+}
 body{
-    
-    overflow:hidden;
+    overflow-y: scroll;    
     font-family: raleway;    
 }
 .header{
@@ -22,14 +27,14 @@ body{
     color: #FFADAD;
     margin-top: 8px;
     margin-left: 8px;
-    text-decoration: inherit;
 }
 .navbar{
     position: fixed;
     width: 100%;
     height: 30px;
     background-color: #361419;
-    padding-top: 80px
+    padding-top: 80px;
+    z-index: 99;
 }
 .navbar-text{
     margin-top: 5px;
@@ -44,7 +49,7 @@ body{
     position: relative;
     background-color: #361419;
     border: none;
-    color: #F8FFFD;
+    color: #FFADAD;
     padding: 3px 10px 3px 10px;
     transition-duration:0.4s;
     text-decoration: none;
@@ -69,13 +74,14 @@ body{
     opacity:1;
     transition:0s
 }
+.button:focus {outline:0;}
 .container > div {
     display: inline-block;
     display: -moz-inline-box;
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
     width: 24%;
-    word-break: break-all;
+    word-break: normal;
     
 }
 
@@ -121,14 +127,16 @@ h2{
     color: #FFADAD;
     font-size: 250%;   
 }
-p{
+.p{
+    display: inline-block;
+    vertical-align: top;
     font-size: 150%;
     color: #FFADAD;
     margin-left: 5%;
     margin-right: 5%;
 }
 li{
-    font-size: 150%;
+    font-size: 120%;
     color: #FFADAD;
     margin-left: 5%;
     margin-right: 5%;
@@ -139,11 +147,102 @@ li{
 .team-img{
     height: 200px;
     display: block;
-======
-    width: 23%;
+    /* width: 23%; */
     text-align: center;
 }
 .team-page{
     background-color: #90323D
->>>>>>> 21c88033bc132bd307c9f005fc56377bbb4743d2
+}
+
+.body-text{
+    font-size: 100%;
+}
+.title{
+    font-size: 150%;
+    font-weight: bold;
+}
+.subtitle{
+    padding-top: 0px;
+    font-size: 110%;
+}
+
+
+button.accordion {
+    background-color: #BE4353;
+    color: #FFADAD;
+    padding-top: 18px;
+    padding-bottom: 18px;   
+    padding-right: 0px; 
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 130%;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #FFADAD;    
+    color: #BE4353; 
+}
+
+div.panel {
+    display: none;
+    padding: 0px;
+}
+p.accordion-text{
+    font-size: 120%;
+    color: #FFADAD;        
+    padding: 0px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+a:link {
+    text-decoration: none;
+    color: #00909B;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #00909B;
+    
+}
+
+a:hover {
+    text-decoration: none;
+    color: #005157;
+    
+}
+
+a:active {
+    text-decoration: none;
+    color: #005157;
+    
+}
+/* LOADING PAGE STUFF */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url("../imgs/loading.gif") center no-repeat #fff;
+}
+
+.map-container {
+	/* width: 100%; */
+	margin: 50px 0px 0px;
+}
+.map-container iframe{
+    /* width: 100%; */
+	display: inline-block;
+	pointer-events: none;
+	position: relative; /* IE needs a position other than static */
+}
+.map-container iframe.clicked{
+	pointer-events: auto;
 }
